@@ -20,6 +20,8 @@
 
 `useradd --create-home a2f0`
 
+`usermod -a -g wheel a2f0`
+
 `passwd a2f0`
 
 ```bash

@@ -1,5 +1,23 @@
 # Arch Linux Notes
 
+## XMonad
+
+Shift + Alt + C - close window.
+
+## Sound
+
+cat /proc/asound/cards
+
+/etc/modprobe.d/alsa-base.conf:
+
+```filecontents
+options snd-hda-intel index=1,0
+```
+
+`alsamixer` to tweak volume
+
+`speaker-test -t wav c 6` to test audio
+
 ## Networking
 
 `ip link` list intefaces

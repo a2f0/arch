@@ -40,8 +40,6 @@ options snd-hda-intel index=1,0
 
 `usermod -a -G wheel a2f0`
 
-`usermod -a -G network a2f0`
-
 `passwd a2f0`
 
 ```bash

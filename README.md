@@ -38,7 +38,9 @@ options snd-hda-intel index=1,0
 
 `useradd --create-home a2f0`
 
-`usermod -a -g wheel a2f0`
+`usermod -a -G wheel a2f0`
+
+`usermod -a -G network a2f0`
 
 `passwd a2f0`
 
@@ -184,6 +186,9 @@ pacman -S broadcom-wl-dkms
 rmmod b43
 rmmod ssb
 modprobe wl
+
+
+iw list
 
 iw wlp2s0 link
 
